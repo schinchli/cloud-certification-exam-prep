@@ -1,7 +1,7 @@
-# AWS, GCP & Cloud Certification Exam Prep — Free Study Guides, Cheatsheets & Roadmaps 2026
+# Claude Certified Architect Exam Guide PDF + AWS SAA-C03 Cheatsheet + GCP Certification Prep 2026
 
-> The most complete free resource for AWS (CLF-C02, SAA-C03, SAP-C02), GCP (ACE, PCA), Azure, and Anthropic Claude certifications.  
-> Real notes from a **13x AWS Certified architect** who has trained 1,000+ engineers.
+> The most complete free resource for AWS (CLF-C02, SAA-C03, SAP-C02), GCP (ACE, PCA), and Anthropic Claude (CCA-F) certifications.  
+> Real notes from a **13x AWS Certified architect** who has trained 1,000+ engineers — including the official Anthropic CCA-F exam guide with all sample questions and exercises.
 
 [![AWS](https://img.shields.io/badge/AWS-13x%20Certified-FF9900?logo=amazonaws&logoColor=white)](./AWS/)
 [![GCP](https://img.shields.io/badge/GCP-Certified-4285F4?logo=googlecloud&logoColor=white)](./GCP/)
@@ -11,7 +11,7 @@
 
 ---
 
-## 🚀 Overview
+## Overview
 
 This repository is a **free, structured certification prep hub** built from real exam experience across AWS, GCP, and Anthropic Claude. Every guide is mapped to official exam domains. No paywalls. No dumps. No filler.
 
@@ -20,11 +20,12 @@ This repository is a **free, structured certification prep hub** built from real
 - SAP-C02 professional notes across 16 topic modules
 - AWS hands-on security labs (KMS, WAF, RDS, Secrets Manager)
 - GCP Cloud Digital Leader + GenAI Leader complete guides
+- **Official Anthropic CCA-F exam guide PDF** — all 5 domains, 12 sample questions with answers, 4 hands-on exercises, full appendix
 - Cheatsheets, practice questions, and learning roadmaps
 
 ---
 
-## 🎯 Who This Is For
+## Who This Is For
 
 | Profile | What You'll Get |
 |---|---|
@@ -32,11 +33,75 @@ This repository is a **free, structured certification prep hub** built from real
 | Developer / DevOps | SAA-C03 study guide + hands-on labs |
 | Architect | SAP-C02 professional notes (16 modules) |
 | AI / ML Engineer | AIF-C01, MLS-C01, GCP ML Engineer paths |
+| Claude / AI SDK developer | CCA-F exam guide with official PDF + all sample questions |
 | Multi-cloud professional | AWS + GCP comparison + Claude CCA-F |
 
 ---
 
-## ☁️ AWS Certification Prep
+## Anthropic Claude CCA-F — Official Exam Guide
+
+The **Claude Certified Architect – Foundations (CCA-F)** is Anthropic's certification for solution architects building production systems with Claude. Launched March 2026 as part of the Claude Partner Network.
+
+**[📄 Download Official CCA-F Exam Guide PDF](./Anthropic%20Claude/Claude%20Certified%20Architect%20%E2%80%93%20Foundations%20Certification%20Exam%20Guide.pdf)**  
+**[→ Full CCA-F Study Guide with All Sample Questions](./Anthropic%20Claude/README.md)**
+
+### Exam at a Glance
+
+| | |
+|---|---|
+| Questions | 60 multiple-choice, scenario-based |
+| Duration | 120 minutes |
+| Passing Score | 720 / 1,000 (scaled 100–1,000) |
+| Format | 4 of 6 scenarios randomly selected |
+| Cost | Free (Claude Partner Network) / $99 otherwise |
+| Registration | [anthropic.skilljar.com](https://anthropic.skilljar.com) |
+
+### 5 Exam Domains
+
+| Domain | Weight | Core Topics |
+|---|---|---|
+| D1: Agentic Architecture & Orchestration | 27% | Agentic loops (`stop_reason`), hub-and-spoke multi-agent, `Task` tool spawning, `PostToolUse` hooks, session forking |
+| D2: Tool Design & MCP Integration | 18% | Tool descriptions for selection, 4–5 tools per agent, `tool_choice` modes, `.mcp.json` vs `~/.claude.json`, `isError` flag |
+| D3: Claude Code Configuration | 20% | CLAUDE.md hierarchy, `.claude/rules/` glob patterns, `.claude/commands/`, plan mode vs direct execution, `-p` flag for CI |
+| D4: Prompt Engineering & Structured Output | 20% | Explicit criteria, few-shot examples, `tool_use` + JSON Schema, validation-retry loops, Message Batches API |
+| D5: Context Management & Reliability | 15% | "Case facts" blocks, lost-in-the-middle, escalation triggers, structured error propagation, scratchpad files |
+
+### 6 Exam Scenarios
+1. **Customer Support Resolution Agent** — `get_customer`, `lookup_order`, `process_refund`, `escalate_to_human`
+2. **Code Generation with Claude Code** — CLAUDE.md, slash commands, plan mode
+3. **Multi-Agent Research System** — coordinator/subagent, parallel `Task` calls, provenance tracking
+4. **Developer Productivity with Claude** — built-in tools (Read/Write/Grep/Glob), MCP servers
+5. **Claude Code for CI/CD** — `-p` flag, `--output-format json`, PR review automation
+6. **Structured Data Extraction** — JSON schemas, validation-retry, Message Batches API
+
+### Key Facts the Exam Tests
+
+```
+stop_reason = "tool_use"  → continue agentic loop
+stop_reason = "end_turn"  → stop
+
+tool_choice: "auto"       → model may return text
+tool_choice: "any"        → model MUST call a tool
+tool_choice: {forced}     → model calls specific tool
+
+~/.claude/CLAUDE.md       → personal only, NOT version-controlled
+.claude/CLAUDE.md         → team-shared via VCS
+.claude/rules/            → path-specific, YAML frontmatter glob patterns
+.claude/commands/         → project slash commands (shared)
+~/.claude/commands/       → personal slash commands (not shared)
+
+-p / --print              → non-interactive mode for CI/CD
+
+Message Batches API       → 50% cost savings, up to 24h, no SLA
+                          → never use for blocking pre-merge checks
+
+Programmatic enforcement  → deterministic (use for financial operations)
+Prompt instructions       → probabilistic (non-zero failure rate)
+```
+
+---
+
+## AWS Certification Prep
 
 | Exam | Level | Guide | Cheatsheet |
 |---|---|---|---|
@@ -51,7 +116,7 @@ This repository is a **free, structured certification prep hub** built from real
 
 ---
 
-## ☁️ GCP Certification Prep
+## GCP Certification Prep
 
 | Exam | Level | Guide | Cheatsheet |
 |---|---|---|---|
@@ -65,7 +130,7 @@ This repository is a **free, structured certification prep hub** built from real
 
 ---
 
-## 🧠 Cloud Certification Learning Roadmap
+## Cloud Certification Learning Roadmap
 
 ```
 START HERE
@@ -82,7 +147,7 @@ ASSOCIATE (6–10 weeks each)
     │
     ▼
 SPECIALIST / AI
-    ├── AWS GenAI Developer (AIP-C01)
+    ├── AWS GenAI Practitioner (AIF-C01)
     ├── AWS ML Specialty (MLS-C01)
     ├── AWS Security Specialty (SCS-C02)
     ├── GCP Professional ML Engineer
@@ -96,33 +161,34 @@ PROFESSIONAL (10–16 weeks)
 
 ---
 
-## 📦 Repo Structure
+## Repo Structure
 
 ```
 cloud-certification-exam-prep/
 │
+├── Anthropic Claude/
+│   ├── README.md                     All 5 domains · 12 sample Qs · 4 exercises · appendix
+│   └── Claude Certified Architect – Foundations Certification Exam Guide.pdf
+│
 ├── AWS/
-│   ├── SAP-C02/              16-module professional notes (IAM → DR → IaC)
+│   ├── SAP-C02/                      16-module professional notes (IAM → DR → IaC)
 │   ├── AIF-C01-GenAI-Practitioner/
 │   ├── MLS-C01-ML-Specialty/
 │   ├── SCS-C02-Security-Specialty/
-│   └── security-labs/        Hands-on: KMS · WAF · RDS Secrets Manager
+│   └── security-labs/               Hands-on: KMS · WAF · RDS Secrets Manager
 │
 ├── GCP/
-│   ├── Cloud-Digital-Leader/ Complete guide + practice questions
-│   └── GenAI-Leader/         Google Cloud AI certification guide
-│
-├── Anthropic Claude/         CCA-F exam guide (5 domains, official content)
+│   ├── Cloud-Digital-Leader/         Complete guide + practice questions
+│   └── GenAI-Leader/                 Google Cloud AI certification guide
 │
 ├── cheatsheets/
-│   ├── aws-saa-c03.md        SAA-C03 + CLF-C02 focused cheatsheet
-│   ├── gcp-ace-pca.md        ACE + PCA cheatsheet
+│   ├── aws-saa-c03.md               SAA-C03 + CLF-C02 exam day reference
+│   ├── gcp-ace-pca.md               ACE + PCA exam day reference
 │   ├── aws-core-services.md
 │   ├── gcp-core-services.md
-│   ├── azure-core-services.md
 │   └── claude-cca-f.md
 │
-├── practice-questions/       AWS · GCP · Azure · Claude CCA-F
+├── practice-questions/               AWS · GCP · Claude CCA-F
 │
 └── roadmap/
     ├── aws-certification-guide.md    How to pass AWS SAA-C03 in 2026
@@ -131,7 +197,7 @@ cloud-certification-exam-prep/
 
 ---
 
-## 📚 Official Study Resources
+## Official Study Resources
 
 | Platform | Free Courses | Practice Tests | Docs |
 |---|---|---|---|
@@ -141,15 +207,15 @@ cloud-certification-exam-prep/
 
 ---
 
-## 📊 Practice Questions
+## Practice Questions
 
 - [AWS Practice Questions](./practice-questions/aws.md) — SAA-C03 format
 - [GCP Practice Questions](./practice-questions/gcp.md) — ACE format
-- [Claude CCA-F Practice Questions](./practice-questions/claude-cca-f.md) — 10 official-format questions
+- [Claude CCA-F Practice Questions](./practice-questions/claude-cca-f.md) — official format
 
 ---
 
-## 📋 Cheatsheets
+## Cheatsheets
 
 | Cheatsheet | Best For |
 |---|---|
@@ -161,23 +227,22 @@ cloud-certification-exam-prep/
 
 ---
 
-## 🔥 Why This Repo
+## Why This Repo
 
 - **13x AWS Certified** — notes built from real certification experience
 - **1,000+ engineers trained** — content tested against what actually appears on exams
 - **Official sources only** — no third-party dumps, no unverified content
 - **No paywalls** — 100% free
-- **Actively maintained** — covers the newest 2026 certifications including Anthropic CCA-F
+- **Actively maintained** — covers 2026 certifications including Anthropic CCA-F
 - **Hands-on labs** — not just theory; deployable AWS security labs included
+- **Official PDF hosted here** — Anthropic CCA-F exam guide PDF with all sample questions and exercises, downloadable directly from this repo
 
 ---
 
-## 🚀 Learn With a Mentor — 1:1 Guidance
+## Learn With a Mentor — 1:1 Guidance
 
 Struggling to know where to start? Stuck on exam concepts?  
 Work directly with **Shashank Chinchli** — Sr. Solutions Architect at GitLab, ex-AWS, AWS Golden Jacket recipient.
-
-**About the Mentor:**
 
 | | |
 |---|---|
@@ -186,15 +251,15 @@ Work directly with **Shashank Chinchli** — Sr. Solutions Architect at GitLab, 
 | **Certifications** | 13x AWS Certified |
 | **Recognition** | AWS Golden Jacket — awarded to top AWS community contributors |
 | **Engineers Trained** | 1,000+ |
-| **Mentor Rating** | ⭐⭐⭐⭐⭐ Top 1% on Topmate |
+| **Mentor Rating** | Top 1% on Topmate |
 
 **What you get from 1:1 mentorship:**
 
-- ✅ Personalized certification roadmap for your background and goals
-- ✅ Exam strategy — what to focus on, what to skip
-- ✅ Architecture review and real-world scenario coaching
-- ✅ Resume and career positioning for cloud roles
-- ✅ Direct answers from someone who has passed 13 AWS exams
+- Personalized certification roadmap for your background and goals
+- Exam strategy — what to focus on, what to skip
+- Architecture review and real-world scenario coaching
+- Resume and career positioning for cloud roles
+- Direct answers from someone who has passed 13 AWS exams
 
 **Common pain points solved:**
 
@@ -207,14 +272,14 @@ Work directly with **Shashank Chinchli** — Sr. Solutions Architect at GitLab, 
 
 ---
 
-## 📈 Roadmap
+## Roadmap
 
 - [x] AWS SAP-C02 professional notes (16 modules)
 - [x] AWS specialty notes — AIF-C01, MLS-C01, SCS-C02
 - [x] AWS hands-on security labs
 - [x] GCP Cloud Digital Leader complete guide + practice questions
 - [x] GCP GenAI Leader complete guide
-- [x] Anthropic Claude CCA-F exam guide
+- [x] Anthropic Claude CCA-F exam guide (official PDF + full study guide)
 - [x] Platform cheatsheets and practice questions
 - [x] AWS + GCP certification roadmap guides
 - [ ] AWS SAA-C03 dedicated notes
@@ -226,7 +291,7 @@ Work directly with **Shashank Chinchli** — Sr. Solutions Architect at GitLab, 
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 PRs welcome. To contribute:
 
@@ -237,13 +302,13 @@ PRs welcome. To contribute:
 
 ---
 
-## ⭐ Star This Repo
+*Built from real exam experience. Maintained by a 13x AWS Certified architect. Last updated April 2026.*  
+*[📖 Book 1:1 mentorship](https://topmate.io/heyshashank)*
+
+---
+
+## Star This Repo
 
 If this saved you time, **[star the repo](https://github.com/schinchli/cloud-certification-exam-prep/stargazers)** — it helps other engineers find it.
 
 [![GitHub stars](https://img.shields.io/github/stars/schinchli/cloud-certification-exam-prep?style=social)](https://github.com/schinchli/cloud-certification-exam-prep/stargazers)
-
----
-
-*Built from real exam experience. Maintained by a 13x AWS Certified architect. Last updated April 2026.*  
-*[📖 Book 1:1 mentorship](https://topmate.io/heyshashank)*
