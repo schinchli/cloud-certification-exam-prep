@@ -1,7 +1,5 @@
 # Google Cloud Platform - Exam Study Notes
 
-## Study Guide by Vladimir Raykov (Udemy Course)
-
 ### Why Go to The Cloud? The Business Revolution
 
 - Eliminates large upfront costs (CapEx → OpEx)
