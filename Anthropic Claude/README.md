@@ -10,7 +10,7 @@ The **Claude Certified Architect – Foundations (CCA-F)** is Anthropic's offici
 
 **Registration:** [Anthropic Academy — anthropic.skilljar.com](https://anthropic.skilljar.com)  
 **Eligibility:** Claude Partner Network membership required  
-**Official Exam Guide:** Available inside Anthropic Academy after partner enrollment
+**Official Exam Guide:** [📄 Claude Certified Architect – Foundations Certification Exam Guide (PDF)](./Claude%20Certified%20Architect%20%E2%80%93%20Foundations%20Certification%20Exam%20Guide.pdf)
 
 ---
 
