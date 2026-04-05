@@ -1,128 +1,241 @@
-# ☁️ Cloud & AI Certification Exam Prep — AWS, Azure, GCP, Anthropic Claude
+# AWS, GCP & Cloud Certification Exam Prep — Free Study Guides, Cheatsheets & Roadmaps 2026
 
-Master cloud and AI certifications with structured study plans, domain breakdowns, and official learning paths for AWS, Azure, GCP, and the new Anthropic Claude CCA-F exam.
+> The most complete free resource for AWS (CLF-C02, SAA-C03, SAP-C02), GCP (ACE, PCA), Azure, and Anthropic Claude certifications.  
+> Real notes from a **13x AWS Certified architect** who has trained 1,000+ engineers.
 
-> 🚀 A curated, no-fluff roadmap to help you pass cloud certifications faster and become a job-ready cloud or AI engineer.
-
-[![AWS](https://img.shields.io/badge/AWS-Certification-FF9900?logo=amazonaws&logoColor=white)](./AWS/)
-[![Azure](https://img.shields.io/badge/Azure-Certification-0078D4?logo=microsoftazure&logoColor=white)](./Azure/)
-[![GCP](https://img.shields.io/badge/GCP-Certification-4285F4?logo=googlecloud&logoColor=white)](./GCP/)
-[![Anthropic Claude](https://img.shields.io/badge/Anthropic-CCA--F-7C3AED)](./Anthropic%20Claude/)
+[![AWS](https://img.shields.io/badge/AWS-13x%20Certified-FF9900?logo=amazonaws&logoColor=white)](./AWS/)
+[![GCP](https://img.shields.io/badge/GCP-Certified-4285F4?logo=googlecloud&logoColor=white)](./GCP/)
+[![Azure](https://img.shields.io/badge/Azure-Certified-0078D4?logo=microsoftazure&logoColor=white)](./Azure/)
+[![Claude CCA-F](https://img.shields.io/badge/Anthropic-CCA--F-7C3AED)](./Anthropic%20Claude/)
+[![Stars](https://img.shields.io/github/stars/schinchli/cloud-certification-exam-prep?style=social)](https://github.com/schinchli/cloud-certification-exam-prep/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green)](./LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/schinchli/cloud-certification-exam-prep?style=social)](https://github.com/schinchli/cloud-certification-exam-prep/stargazers)
 
 ---
 
 ## ⭐ Star This Repo
 
-If this helps you, **star the repo** — it helps others discover it and keeps the content growing.
+**Star the repo** if it helps you — every star helps more engineers find this free resource.
 
 ---
 
 ## 🚀 Overview
 
-This repository is a **complete cloud and AI certification preparation guide** designed for engineers and architects targeting the most in-demand certifications of 2026. Every guide links to official vendor documentation — no paywalls, no dumps, no filler.
+This repository is a **free, structured certification prep hub** built from real exam experience across AWS, GCP, Azure, and Anthropic Claude. Every guide is mapped to official exam domains. No paywalls. No dumps. No filler.
+
+**What's inside:**
+- Deep-dive study notes for 8 certifications
+- SAP-C02 professional notes across 16 topic modules
+- AWS hands-on security labs (KMS, WAF, RDS, Secrets Manager)
+- GCP Cloud Digital Leader + GenAI Leader complete guides
+- Cheatsheets, practice questions, and learning roadmaps
 
 ---
 
 ## 🎯 Who This Is For
 
-- ✅ Beginners entering cloud computing (0 → cloud engineer)
-- ✅ AWS / Azure / GCP certification aspirants
-- ✅ AI engineers preparing for the Anthropic Claude CCA-F exam
-- ✅ DevOps, software engineers, and solutions architects
-- ✅ Students and professionals upgrading to multi-cloud skills
-- ❌ Not for passive reading — this is **action-oriented learning**
+| Profile | What You'll Get |
+|---|---|
+| Beginner (0 → Cloud) | CLF-C02 + GCP Digital Leader roadmap |
+| Developer / DevOps | SAA-C03 study guide + hands-on labs |
+| Architect | SAP-C02 professional notes (16 modules) |
+| AI / ML Engineer | AIF-C01, MLS-C01, GCP ML Engineer paths |
+| Multi-cloud professional | AWS + GCP + Azure comparison + Claude CCA-F |
 
 ---
 
-## ☁️ Certifications Covered
+## ☁️ AWS Certification Prep
 
-| Platform | Certifications | Guide |
-|---|---|---|
-| **AWS** | Cloud Practitioner · Solutions Architect · Developer · DevOps · AI Practitioner · GenAI Developer | [AWS →](./AWS/) |
-| **Azure** | AZ-900 · AZ-104 · AZ-204 · AI-900 · AI-102 · AZ-305 | [Azure →](./Azure/) |
-| **GCP** | Cloud Digital Leader · Associate Cloud Engineer · Professional Cloud Architect · ML Engineer | [GCP →](./GCP/) |
-| **Anthropic** | Claude Certified Architect – Foundations (CCA-F) | [Claude →](./Anthropic%20Claude/) |
-
----
-
-## 🧠 Cloud Learning Roadmap
-
-```
-Fundamentals → Core Services → Architecture → Hands-on Labs → Practice Exams → Certification
-
-BEGINNER
-  ├── AWS Cloud Practitioner (CLF-C02)
-  ├── Azure Fundamentals (AZ-900)
-  └── GCP Cloud Digital Leader
-
-ASSOCIATE
-  ├── AWS Solutions Architect Associate (SAA-C03)
-  ├── Azure AI Engineer (AI-102)
-  └── GCP Associate Cloud Engineer (ACE)
-
-AI / SPECIALIST
-  ├── AWS GenAI Developer (AIP-C01)
-  ├── GCP Professional ML Engineer
-  └── Anthropic Claude Certified Architect – Foundations (CCA-F)  ← NEW 2026
-
-PROFESSIONAL
-  ├── AWS Solutions Architect Professional (SAP-C02)
-  └── GCP Professional Cloud Architect (PCA)
-```
-
----
-
-## 📚 Study Resources
-
-| Platform | Free Courses | Practice Exams | Official Docs |
+| Exam | Level | Guide | Cheatsheet |
 |---|---|---|---|
-| AWS | [AWS Skill Builder](https://skillbuilder.aws) | [Official Practice](https://explore.skillbuilder.aws) | [docs.aws.amazon.com](https://docs.aws.amazon.com) |
+| AWS Cloud Practitioner (CLF-C02) | Foundational | [Roadmap →](./roadmap/aws-certification-guide.md) | [Cheatsheet →](./cheatsheets/aws-saa-c03.md) |
+| AWS Solutions Architect Associate (SAA-C03) | Associate | [Study Guide →](./AWS/) | [Cheatsheet →](./cheatsheets/aws-saa-c03.md) |
+| AWS AI Practitioner (AIF-C01) | Foundational | [Notes →](./AWS/AIF-C01-GenAI-Practitioner/) | [AWS Core →](./cheatsheets/aws-core-services.md) |
+| AWS ML Specialty (MLS-C01) | Specialty | [Notes →](./AWS/MLS-C01-ML-Specialty/) | [AWS Core →](./cheatsheets/aws-core-services.md) |
+| AWS Security Specialty (SCS-C02) | Specialty | [Notes →](./AWS/SCS-C02-Security-Specialty/) | [AWS Core →](./cheatsheets/aws-core-services.md) |
+| AWS Solutions Architect Professional (SAP-C02) | Professional | [16-Module Notes →](./AWS/SAP-C02/) | [AWS Core →](./cheatsheets/aws-core-services.md) |
+
+→ Full AWS guide: [**How to Pass AWS Certification in 2026**](./roadmap/aws-certification-guide.md)
+
+---
+
+## ☁️ GCP Certification Prep
+
+| Exam | Level | Guide | Cheatsheet |
+|---|---|---|---|
+| GCP Cloud Digital Leader | Foundational | [Complete Guide →](./GCP/Cloud-Digital-Leader/) | [GCP Cheatsheet →](./cheatsheets/gcp-ace-pca.md) |
+| GCP Associate Cloud Engineer (ACE) | Associate | [Roadmap →](./roadmap/gcp-certification-guide.md) | [GCP Cheatsheet →](./cheatsheets/gcp-ace-pca.md) |
+| GCP Professional Cloud Architect (PCA) | Professional | [Roadmap →](./roadmap/gcp-certification-guide.md) | [GCP Cheatsheet →](./cheatsheets/gcp-ace-pca.md) |
+| Google Cloud GenAI Leader | Foundational | [Complete Guide →](./GCP/GenAI-Leader/) | [GCP Core →](./cheatsheets/gcp-core-services.md) |
+| GCP Professional ML Engineer | Professional | [Roadmap →](./roadmap/gcp-certification-guide.md) | [GCP Cheatsheet →](./cheatsheets/gcp-ace-pca.md) |
+
+→ Full GCP guide: [**GCP Associate Cloud Engineer Complete Guide 2026**](./roadmap/gcp-certification-guide.md)
+
+---
+
+## 🧠 Cloud Certification Learning Roadmap
+
+```
+START HERE
+    │
+    ▼
+FOUNDATIONAL (4–6 weeks each)
+    ├── AWS Cloud Practitioner (CLF-C02)      → first cert, validates cloud basics
+    ├── GCP Cloud Digital Leader               → GCP equivalent of CLF
+    └── Azure Fundamentals (AZ-900)            → Azure entry point
+    │
+    ▼
+ASSOCIATE (6–10 weeks each)
+    ├── AWS Solutions Architect Associate (SAA-C03)   ← highest ROI cert in market
+    ├── GCP Associate Cloud Engineer (ACE)
+    └── Azure AI Engineer (AI-102)
+    │
+    ▼
+SPECIALIST / AI
+    ├── AWS GenAI Developer (AIP-C01)
+    ├── AWS ML Specialty (MLS-C01)
+    ├── AWS Security Specialty (SCS-C02)
+    ├── GCP Professional ML Engineer
+    └── Anthropic Claude Certified Architect – Foundations (CCA-F)  ← new 2026
+    │
+    ▼
+PROFESSIONAL (10–16 weeks)
+    ├── AWS Solutions Architect Professional (SAP-C02)
+    └── GCP Professional Cloud Architect (PCA)
+```
+
+---
+
+## 📦 Repo Structure
+
+```
+cloud-certification-exam-prep/
+│
+├── AWS/
+│   ├── SAP-C02/              16-module professional notes (IAM → DR → IaC)
+│   ├── AIF-C01-GenAI-Practitioner/
+│   ├── MLS-C01-ML-Specialty/
+│   ├── SCS-C02-Security-Specialty/
+│   └── security-labs/        Hands-on: KMS · WAF · RDS Secrets Manager
+│
+├── GCP/
+│   ├── Cloud-Digital-Leader/ Complete guide + practice questions
+│   └── GenAI-Leader/         Google Cloud AI certification guide
+│
+├── Azure/                    AZ-900 · AI-900 · AI-102 · AZ-305
+│
+├── Anthropic Claude/         CCA-F exam guide (5 domains, official content)
+│
+├── cheatsheets/
+│   ├── aws-saa-c03.md        SAA-C03 + CLF-C02 focused cheatsheet
+│   ├── gcp-ace-pca.md        ACE + PCA cheatsheet
+│   ├── aws-core-services.md
+│   ├── gcp-core-services.md
+│   ├── azure-core-services.md
+│   └── claude-cca-f.md
+│
+├── practice-questions/       AWS · GCP · Azure · Claude CCA-F
+│
+└── roadmap/
+    ├── aws-certification-guide.md    How to pass AWS SAA-C03 in 2026
+    └── gcp-certification-guide.md   How to pass GCP ACE in 2026
+```
+
+---
+
+## 📚 Official Study Resources
+
+| Platform | Free Courses | Practice Tests | Docs |
+|---|---|---|---|
+| AWS | [Skill Builder](https://skillbuilder.aws) | [Official Practice](https://explore.skillbuilder.aws) | [docs.aws.amazon.com](https://docs.aws.amazon.com) |
+| GCP | [Cloud Skills Boost](https://cloudskillsboost.google) | [GCP Practice](https://cloudskillsboost.google) | [cloud.google.com/docs](https://cloud.google.com/docs) |
 | Azure | [Microsoft Learn](https://learn.microsoft.com) | [Practice Assessments](https://learn.microsoft.com/certifications/practice-assessments-for-microsoft-certifications) | [learn.microsoft.com/azure](https://learn.microsoft.com/azure) |
-| GCP | [Cloud Skills Boost](https://cloudskillsboost.google) | [Official Practice](https://cloudskillsboost.google) | [cloud.google.com/docs](https://cloud.google.com/docs) |
-| Anthropic | [Anthropic Academy](https://anthropic.skilljar.com) | [Official Practice Exam](https://anthropic.skilljar.com) | [docs.anthropic.com](https://docs.anthropic.com) |
+| Anthropic | [Anthropic Academy](https://anthropic.skilljar.com) | [Official Exam](https://anthropic.skilljar.com) | [docs.anthropic.com](https://docs.anthropic.com) |
 
 ---
 
 ## 📊 Practice Questions
 
-- [AWS Practice Questions](./practice-questions/aws.md)
-- [Azure Practice Questions](./practice-questions/azure.md)
-- [GCP Practice Questions](./practice-questions/gcp.md)
-- [Claude CCA-F Practice Questions](./practice-questions/claude-cca-f.md)
+- [AWS Practice Questions](./practice-questions/aws.md) — SAA-C03 format
+- [GCP Practice Questions](./practice-questions/gcp.md) — ACE format
+- [Azure Practice Questions](./practice-questions/azure.md) — AZ-900 format
+- [Claude CCA-F Practice Questions](./practice-questions/claude-cca-f.md) — 10 official-format questions
 
 ---
 
 ## 📋 Cheatsheets
 
-One-page references for exam day:
-
-- [AWS Core Services](./cheatsheets/aws-core-services.md)
-- [Azure Core Services](./cheatsheets/azure-core-services.md)
-- [GCP Core Services](./cheatsheets/gcp-core-services.md)
-- [Claude CCA-F Key Concepts](./cheatsheets/claude-cca-f.md)
+| Cheatsheet | Best For |
+|---|---|
+| [AWS SAA-C03 + CLF-C02](./cheatsheets/aws-saa-c03.md) | AWS exam day quick reference |
+| [GCP ACE + PCA](./cheatsheets/gcp-ace-pca.md) | GCP exam day quick reference |
+| [AWS Core Services](./cheatsheets/aws-core-services.md) | Service-by-service reference |
+| [GCP Core Services](./cheatsheets/gcp-core-services.md) | GCP service reference |
+| [Azure Core Services](./cheatsheets/azure-core-services.md) | Azure service reference |
+| [Claude CCA-F Key Concepts](./cheatsheets/claude-cca-f.md) | CCA-F exam day reference |
 
 ---
 
 ## 🔥 Why This Repo
 
-- **Official sources only** — every guide links to vendor documentation
-- **No paywalls** — all resources are free
-- **Covers the newest certs** — including Anthropic CCA-F (launched March 2026)
-- **Roadmap-driven** — structured path from beginner to professional
+- **13x AWS Certified** — notes built from real certification experience
+- **1,000+ engineers trained** — content tested against what actually appears on exams
+- **Official sources only** — no third-party dumps, no unverified content
+- **No paywalls** — 100% free
+- **Actively maintained** — covers the newest 2026 certifications including Anthropic CCA-F
+- **Hands-on labs** — not just theory; deployable AWS security labs included
+
+---
+
+## 🚀 Learn With a Mentor — 1:1 Guidance
+
+Struggling to know where to start? Stuck on exam concepts?  
+Work directly with **Shashank Chinchli** — Sr. Solutions Architect at GitLab, ex-AWS, AWS Golden Jacket recipient.
+
+**About the Mentor:**
+
+| | |
+|---|---|
+| **Role** | Sr. Solutions Architect @ GitLab |
+| **Background** | ex-AWS |
+| **Certifications** | 13x AWS Certified |
+| **Recognition** | AWS Golden Jacket — awarded to top AWS community contributors |
+| **Engineers Trained** | 1,000+ |
+| **Mentor Rating** | ⭐⭐⭐⭐⭐ Top 1% on Topmate |
+
+**What you get from 1:1 mentorship:**
+
+- ✅ Personalized certification roadmap for your background and goals
+- ✅ Exam strategy — what to focus on, what to skip
+- ✅ Architecture review and real-world scenario coaching
+- ✅ Resume and career positioning for cloud roles
+- ✅ Direct answers from someone who has passed 13 AWS exams
+
+**Common pain points solved:**
+
+> *"I don't know which cert to take first."*  
+> *"I've been studying for months and keep failing."*  
+> *"I passed the exam but can't get interviews."*  
+> *"I need to go from developer to solutions architect."*
+
+**[→ Book a session on Topmate](https://topmate.io/heyshashank)**
 
 ---
 
 ## 📈 Roadmap
 
-- [x] AWS certification guides
-- [x] Azure certification guides
+- [x] AWS SAP-C02 professional notes (16 modules)
+- [x] AWS specialty notes — AIF-C01, MLS-C01, SCS-C02
+- [x] AWS hands-on security labs
+- [x] GCP Cloud Digital Leader complete guide + practice questions
+- [x] GCP GenAI Leader complete guide
 - [x] Anthropic Claude CCA-F exam guide
-- [ ] GCP certification guides *(in progress)*
-- [ ] Practice question banks
-- [ ] Cheatsheets per platform
-- [ ] AWS vs Azure vs GCP comparison guide
+- [x] Platform cheatsheets and practice questions
+- [x] AWS + GCP certification roadmap guides
+- [ ] AWS SAA-C03 dedicated notes
+- [ ] AWS CLF-C02 foundational guide
+- [ ] GCP ACE dedicated notes
+- [ ] GCP PCA dedicated notes
+- [ ] AWS vs GCP vs Azure comparison guide
 
 ---
 
@@ -133,10 +246,9 @@ PRs welcome. To contribute:
 1. Fork this repo
 2. Add content under the relevant platform folder
 3. Link only to official vendor documentation
-4. Submit a pull request
-
-Please do not add affiliate links, paywalled content, or unverified exam dumps.
+4. Keep it factual — no unverified exam dumps
 
 ---
 
-*All content verified against official vendor documentation. Last updated April 2026.*
+*Built from real exam experience. Maintained by a 13x AWS Certified architect. Last updated April 2026.*  
+*[⭐ Star this repo](https://github.com/schinchli/cloud-certification-exam-prep) · [📖 Book mentorship](https://topmate.io/heyshashank)*
